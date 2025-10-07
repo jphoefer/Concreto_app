@@ -6,6 +6,8 @@
     <title>Sistema de Gestión de Concreto Premezclado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f4f4f4; }
         .container { max-width: 1400px; margin: 0 auto; }
@@ -319,11 +321,13 @@
         <!-- Navegación rápida -->
         <div class="navigation">
             <a href="index.php" class="nav-button"><i class="fas fa-home"></i> Dashboard</a>
-            <a href="index.php?action=materiales" class="nav-button"><i class="fas fa-cubes"></i> Materiales</a>
+            <a href="index.php?action=producciones" class="nav-button"><i class="fas fa-industry"></i> Producción</a>
+            <a href="index.php?action=clientes" class="nav-button"><i class="fas fa-users"></i> Clientes</a>
+            <a href="index.php?action=inventario" class="nav-button"><i class="fas fa-chart-area"></i> Inventario</a>
             <a href="index.php?action=resistencias" class="nav-button"><i class="fas fa-tachometer-alt"></i> Resistencias</a>
             <a href="index.php?action=entradas" class="nav-button"><i class="fas fa-arrow-down"></i> Entradas</a>
-            <a href="index.php?action=producciones" class="nav-button"><i class="fas fa-arrow-up"></i> Producción</a>
-            <a href="index.php?action=inventario" class="nav-button"><i class="fas fa-boxes"></i> Inventario</a>
+            <a href="index.php?action=materiales" class="nav-button"><i class="fas fa-cubes"></i> Materiales</a>
+			<a href="index.php?action=proveedores" class="nav-button"><i class="fas fa-handshake"></i> Proveedores</a>
         </div>
 
         <?php if (isset($message) && $message): ?>

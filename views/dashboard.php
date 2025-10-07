@@ -2,16 +2,38 @@
 
 <div class="container">
     <h2>Dashboard - Planta de Concreto Premezclado</h2>
+
+
     <div class="row">
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Materiales</h5>
-                    <p class="card-text">Gestionar materiales (agregados, cemento, aditivos, agua).</p>
-                    <a href="index.php?action=materiales" class="btn btn-primary">Ir a Materiales</a>
+                    <h5 class="card-title">Producción</h5>
+                    <p class="card-text">Registrar producción de concreto.</p>
+                    <a href="index.php?action=producciones" class="btn btn-primary">Ir a Producción</a>
                 </div>
             </div>
         </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Clientes</h5>
+                    <p class="card-text">Gestionar clientes de la planta.</p>
+                    <a href="index.php?action=clientes" class="btn btn-primary">Ir a Clientes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Inventario</h5>
+                    <p class="card-text">Consultar niveles de inventario.</p>
+                    <a href="index.php?action=inventario" class="btn btn-primary">Ir a Inventario</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
@@ -30,23 +52,25 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-4">
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Producción</h5>
-                    <p class="card-text">Registrar producción de concreto.</p>
-                    <a href="index.php?action=producciones" class="btn btn-primary">Ir a Producción</a>
+                    <h5 class="card-title">Materiales</h5>
+                    <p class="card-text">Gestionar materiales (agregados, cemento).</p>
+                    <a href="index.php?action=materiales" class="btn btn-primary">Ir a Materiales</a>
                 </div>
             </div>
         </div>
+
+    </div>
+    <div class="row mt-4">
+
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Inventario</h5>
-                    <p class="card-text">Consultar niveles de inventario.</p>
-                    <a href="index.php?action=inventario" class="btn btn-primary">Ir a Inventario</a>
+                    <h5 class="card-title">Proveedores</h5>
+                    <p class="card-text">Gestionar proveedores de materiales.</p>
+                    <a href="index.php?action=proveedores" class="btn btn-primary">Ir a Proveedores</a>
                 </div>
             </div>
         </div>

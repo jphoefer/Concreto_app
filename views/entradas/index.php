@@ -24,17 +24,17 @@ if (file_exists($headerPath)) {
         </div>
         <div class="stat-card">
             <div class="stat-title">Cantidad Total</div>
-            <div class="stat-number"><?php echo number_format($stats['total_cantidad']); ?></div>
+            <div class="stat-number"><?php echo number_format($stats['total_cantidad'] ?? 0); ?></div>
             <div class="stat-desc">Unidades ingresadas</div>
         </div>
         <div class="stat-card">
             <div class="stat-title">Inversión Total</div>
-            <div class="stat-number">$<?php echo number_format($stats['total_costo'], 2); ?></div>
+            <div class="stat-number">$<?php echo number_format($stats['total_costo'] ?? 0, 2); ?></div>
             <div class="stat-desc">En compras de materiales</div>
         </div>
         <div class="stat-card">
             <div class="stat-title">Costo Promedio</div>
-            <div class="stat-number">$<?php echo number_format($stats['costo_promedio'], 2); ?></div>
+            <div class="stat-number">$<?php echo number_format($stats['costo_promedio'] ?? 0, 2); ?></div>
             <div class="stat-desc">Por entrada</div>
         </div>
     </div>
@@ -126,9 +126,9 @@ if (file_exists($headerPath)) {
                     <tr>
                         <td><?php echo $analisis['proveedor_nombre']; ?></td>
                         <td><?php echo $analisis['total_compras']; ?></td>
-                        <td><?php echo number_format($analisis['total_cantidad']); ?></td>
-                        <td>$<?php echo number_format($analisis['total_comprado'], 2); ?></td>
-                        <td>$<?php echo number_format($analisis['precio_promedio'], 2); ?></td>
+                        <td><?php echo number_format($analisis['total_cantidad'] ?? 0); ?></td>
+                        <td>$<?php echo number_format($analisis['total_comprado'] ?? 0, 2); ?></td>
+                        <td>$<?php echo number_format($analisis['precio_promedio'] ?? 0, 2); ?></td>
                         <td><?php echo $analisis['ultima_compra']; ?></td>
                         <td>
                             <div class="action-buttons">
